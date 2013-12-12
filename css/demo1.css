@@ -21,7 +21,27 @@
     background: #F5F5F5;
     font-size: 16px;
     color: #000;
+    padding-top: 85px;
 }
+
+
+.spoof-footer{
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 10px;
+	font-weight: 600;
+	float:right;
+	position: absolute;
+	bottom:30px;
+	right: 25px;
+}
+
+.spoof .spoof-footer a{
+	text-decoration: underline;
+	color:blue;
+
+}
+
+
 
 .msg {
     margin-top: 50px;
@@ -39,7 +59,7 @@
     margin-left: auto;
 }
 .loader {
-    width: 0;
+    width: 90%;
     height: 100%;
     background-color: #6188F5;
     background-repeat: repeat-x;
@@ -54,41 +74,58 @@
     background-image: -o-linear-gradient(315deg,transparent,transparent 33%,rgba(0, 0, 0, 0.12) 33%,rgba(0, 0, 0, 0.12) 66%,transparent 66%,transparent);
     background-image: linear-gradient(315deg,transparent,transparent 33%,rgba(0, 0, 0, 0.12) 33%,rgba(0, 0, 0, 0.12) 66%,transparent 66%,transparent);
     /*animation*/
-    -webkit-animation: load 5s linear 0 infinite;
-    -moz-animation: load 5s linear 0 infinite;
-    -ms-animation: load 5s linear 0 infinite;
-    -o-animation: load 5s linear 0 infinite;
-    animation: load 5s linear 0 infinite;
+    -webkit-animation: load 2s linear 0 ;
+    -moz-animation: load 2s linear 0 ;
+    -ms-animation: load 2s linear 0 ;
+    -o-animation: load 2s linear 0 ;
+    animation: load 2s linear 0 ;
 }
 /* Then animate the stuff */
 @-webkit-keyframes load { 
     0% { width: 0% ;
 		background-position:0 0;}
-    100% { width: 100%;
+    100% { width: 90%;
 			background-position:-40px 0;
 			}
 }
 @-ms-keyframes load { 
    0% { width: 0% ;
 		background-position:0 0;}
-    100% { width: 100%;
+    100% { width: 90%;
 			background-position:-40px 0;
 			}
 }
 @-o-keyframes load { 
     0% { width: 0% ;
 		background-position:0 0;}
-    100% { width: 100%;
+    100% { width: 90%;
 			background-position:-40px 0;
 			}
 }
 @keyframes load { 
   0% { width: 0% ;
 		background-position:0 0;}
-    100% { width: 100%;
+    100% { width: 90%;
 			background-position:-40px 0;
 			}
 }
+
+
+
+
+#fail-screen{
+	width: 100%;
+	height:1080px;
+	margin-top:-1080px;
+	background-color: rgb(0,0,0);
+	opacity: .6;
+	position: absolute;
+	z-index: 303;
+}
+
+
+
+
 
 .bb-custom-wrapper {
 	width: 950px;
@@ -383,7 +420,7 @@
 
 #eleventh .right-col .image-wrap-2{
 	margin-top: 15px;
-	background-color:#AFCCA9;
+	background-color:#F04E3E;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
@@ -410,7 +447,7 @@
 
 #fourteenth .right-col .image-wrap-2{
 	margin-top: 15px;
-	background-color:#C7B2D6;
+	background-color:#FFE075;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	

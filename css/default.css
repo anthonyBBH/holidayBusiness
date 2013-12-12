@@ -42,7 +42,7 @@ body {
     transition: all 3s ease;
 }
 
-.bg-0 {background-color: #000;}
+.bg-0 {background-color: #AFCCA9;}
 .bg-1 {background-color: #AFCCA9;}
 .bg-2 {background-color: #AFCCA9;}
 
@@ -94,6 +94,15 @@ h2{
 	color:red;
 }
 
+h3{ 
+	font-family: 'ciderscript', serif; 
+	font-size: 1.48889584822244em; 
+	font-style: ;
+	font-weight: 500;
+	letter-spacing: 3px;
+	color:#4C4C4E;
+}
+
 .clear-all{
 	line-height: 0;
 	margin-top:0; 
@@ -115,6 +124,9 @@ h2{
          -o-transform: rotate(-16deg) skew(-24deg, 0);
             transform: rotate(-16deg) skew(-24deg, 0);
 }
+
+
+
 
 .level-up{
 	margin: 15px 0 0 -63px; 
@@ -288,101 +300,6 @@ h2{
 	line-height: 1.5;
 }
 
-/* To Navigation Style */
-.codrops-top {
-	background: #fff;
-	background: rgba(255, 255, 255, 0.6);
-	text-transform: uppercase;
-	width: 100%;
-	font-size: 0.69em;
-	line-height: 2.2;
-}
-
-.codrops-top a {
-	padding: 0 1em;
-	letter-spacing: 0.1em;
-	color: #888;
-	display: inline-block;
-}
-
-.codrops-top a:hover {
-	background: rgba(255,255,255,0.95);
-	color: #333;
-}
-
-.codrops-top span.right {
-	float: right;
-}
-
-.codrops-top span.right a {
-	float: left;
-	display: block;
-}
-
-.codrops-icon:before {
-	font-family: 'codropsicons';
-	margin: 0 4px;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
-
-.codrops-icon-drop:before {
-	content: "\e001";
-}
-
-.codrops-icon-prev:before {
-	content: "\e004";
-}
-
-.codrops-icon-archive:before {
-	content: "\e002";
-}
-
-.codrops-icon-next:before {
-	content: "\e000";
-}
-
-.codrops-icon-about:before {
-	content: "\e003";
-}
-
-/* Demo Buttons Style */
-.codrops-demos {
-	padding-top: 1em;
-	font-size: 0.9em;
-}
-
-.codrops-demos a {
-	display: inline-block;
-	margin: 0.2em;
-	padding: 0.45em 1em;
-	background: #999;
-	color: #fff;
-	font-weight: 700;
-	border-radius: 2px;
-}
-
-.codrops-demos a:hover,
-.codrops-demos a.current-demo,
-.codrops-demos a.current-demo:hover {
-	opacity: 0.6;
-}
-
-.codrops-nav {
-	text-align: center;
-}
-
-.codrops-nav a {
-	display: inline-block;
-	margin: 20px auto;
-	padding: 0.3em;
-}
-
 /* Demo Styles */
 
 .demo-1 body {
@@ -390,7 +307,8 @@ h2{
 }
 
 .demo-1 a {
-	color: #72b890;
+	color: blue;
+	text-decoration: underline;
 }
 
 .demo-1 .codrops-demos a {

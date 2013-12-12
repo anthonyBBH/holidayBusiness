@@ -17,12 +17,13 @@
 
 	</head>
 		<body class="bg-0">
-
+			<div id="fail-screen"></div>
 			<div id="spoof">
-
 			<div class="msg">Loading of googlemail@gmail.com...</div>
 			<div class="loader_box">
 				<div class="loader"></div>
+
+				<p class="spoof-footer"> Loading standard view | <a href="#">Load basic HTML</a> (for slow connections)</p>
 			</div>
 
 			</div><!--spoof-->
@@ -365,6 +366,8 @@
 
 					<br><br><br><br><br>
 					<nav>
+
+						<h3>Use your to navigate</h3>
 						<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
 					</nav>
 
@@ -376,7 +379,11 @@
 
 
 
-
+		<audio id="powerDownSound">
+			<source src="media/powerDown.mp3"></source>
+			<source src="media/powerDown.ogg"></source>
+			Your browser isn't invited for super fun audio time.
+		</audio>
 
 
 
@@ -387,16 +394,34 @@
 
 		<script>
 		$( document ).ready(function() {
-    	$('#spoof').delay(4000).fadeOut('fast');
+    		var windowHeight = $(document).height();
+    			console.log(windowHeight);
+    		var windowWidth = $(document).width();
+    			console.log(windowWidth);
 
-});
+			var audio = $("#powerDownSound")[0];
+
+    		$('#fail-screen').css({ "width": windowWidth + "px", "height" : windowHeight + "px" });
+
+
+    		$('#fail-screen').delay(1200).animate({ marginTop: '0px' }, 6000);
+
+    		setTimeout(function() { audio.play(); }, 2000)					
+
+    		$('#fail-screen').delay(1000).animate({ opacity: 1 }, 1000);
+
+    	    $('#spoof').delay(9700).hide('fast');
+    	    $('#fail-screen').delay(1300).fadeOut('fast');
+
+    			});
+	
 		</script>
 
 
 				<script>
 	var counter = 0;
 
-			var colorShifts = ["bg-0", "bg-1", "bg-2", "bg-3", "bg-4", "bg-5", "bg-6", "bg-7", "bg-8", "bg-9", "bg-10", "bg-11", "bg-12"];
+			var colorShifts = ["bg-0", "bg-1", "bg-2", "bg-3", "bg-4", "bg-5", "bg-6", "bg-7", "bg-8", "bg-9", "bg-10", "bg-11", "bg-12", "bg-13"];
 
 
 			function shuffle(o) {
