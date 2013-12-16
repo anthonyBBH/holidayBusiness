@@ -10,8 +10,7 @@
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
-
-			-webkit-border-radius: 10px;
+	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
@@ -30,6 +29,7 @@
 	width: 50%;
 	height: 100%;
 	left: 50%;
+	position: absolute;
 	-webkit-transform-origin: left center;
 	-moz-transform-origin: left center;
 	transform-origin: left center;
@@ -44,24 +44,17 @@
 	transform-origin: center top;
 }
 
-.bb-page > div,
-.bb-outer,
-.bb-content,
-.bb-inner {
+.bb-page > div, .bb-outer, .bb-content, .bb-inner {
+	width: 760px;
+	height:520px;
 	position: absolute;
-	height: 100%;
-	width: 100%;
 	top: 0;
 	left: 0;
 }
 
-.bb-vertical .bb-content {
-	width: 200%;
-}
+.bb-vertical .bb-content { }
+.bb-horizontal .bb-content { }
 
-.bb-horizontal .bb-content {
-	height: 200%;
-}
 
 .bb-page > div {
 	width: 100%;
@@ -199,12 +192,12 @@
 	top: 0;
 	left: 0;
 	display: none;
-		-webkit-border-radius: 10px;
+	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
 
-/* No JS */
+
 .no-js .bb-bookblock, 
 .no-js ul.bb-custom-grid li {
 	width: auto;
