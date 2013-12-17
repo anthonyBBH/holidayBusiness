@@ -102,7 +102,8 @@
 
 
 #fail-screen{
-	width: 100%;
+	max-width: 100%;
+	min-width: 960px;
 	height:1080px;
 	margin-top:-1080px;
 	background-color: rgb(0,0,0);
@@ -164,6 +165,7 @@
 	position: relative;
 	background-color: transparent;
 	float: left;
+	background-repeat: no-repeat;
 }
 
 
@@ -173,7 +175,8 @@
 	box-shadow: 0 0 0 0 rgba(81,64,49,0);
 	transform:rotate(0.2deg);
 	-ms-transform:rotate(0.2deg); /* IE 9 
-	-webkit-transform:rotate(0.2deg); /* Safari and Chrome */*/
+	-webkit-transform:rotate(0.2deg); /* Safari and Chrome */
+	background-repeat: no-repeat;
 }
 
 
@@ -188,9 +191,10 @@
 	background-repeat: no-repeat;
 }
 
-#second .left-col{
-	background-image: url('../images/demo1/have-a-warm-day-by-the-fireplace.png');
 
+
+#second .left-col{
+	background-image: url('../images/demo1/copy.png');
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -342,6 +346,7 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
+	background-image: url('../images/demo1/have-a-warm-day-img.png');
 }
 
 #fourth .right-col .image-wrap-2{
@@ -350,6 +355,7 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
+	background-image: url('../images/demo1/ice-skate-like-a-pro-img.png');
 }
 
 #fifth .right-col .image-wrap-2{
@@ -358,6 +364,7 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
+	background-image: url('../images/demo1/host-a-movie-night-img.png');
 }
 
 #sixth .right-col .image-wrap-2{
@@ -365,7 +372,8 @@
 	background-color:#F9A64A;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	border-radius: 10px;	
+	border-radius: 10px;		
+	background-image: url('../images/demo1/overeat-img.png');
 }
 
 
@@ -374,7 +382,8 @@
 	background-color:#9E85B5;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	border-radius: 10px;	
+	border-radius: 10px;		
+	background-image: url('../images/demo1/catch-up-on-sleep-img.png');	
 }
 
 
@@ -384,6 +393,8 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
+	background-image: url('../images/demo1/take-a-drive-to-admire-the-holiday-lights-img.png');
+
 }
 
 
@@ -393,6 +404,7 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
+	background-image: url('../images/demo1/get-a-crazy-haircut-img.png');	
 }
 
 
@@ -402,6 +414,7 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
+	background-image: url('../images/demo1/go-caroling-with-friends-img.png');		
 }
 
 
@@ -411,6 +424,7 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
+	background-image: url('../images/demo1/spend-time-with-your-kids-img.png');		
 }
 
 
@@ -420,6 +434,7 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
+	background-image: url('../images/demo1/open-gifts-img.png');		
 }
 
 
@@ -429,6 +444,7 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
+	background-image: url('../images/demo1/bake-gingerbread-cookies-img.png');		
 }
 
 
@@ -438,6 +454,7 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
+	background-image: url('../images/demo1/meet-santa-img.png');			
 }
 
 
@@ -496,7 +513,7 @@
 .bb-custom-wrapper nav {
 	width: 100%;
 	height: 30px;
-	margin: 5em auto 0;
+	margin: 5rem auto 0;
 	position: relative;
 	z-index: 0;
 	text-align: center;

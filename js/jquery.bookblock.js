@@ -68,6 +68,7 @@
 
 
     ////////////////////////////////////////////////////////////////////////////////// B O O K  O P T I O N
+
     $.BookBlock.defaults = {
         // vertical or horizontal flip
         orientation: 'vertical',
@@ -84,7 +85,7 @@
         shadowSides: 0.2,
         // opacity value for the "shadow" on the flipping page (while it is flipping)
         // value : 0.1 - 1
-        shadowFlip: 0.1,
+        shadowFlip: 0.9,
         // if we should show the first item after reaching the end
         circular: false,
         // if we want to specify a selector that triggers the next() function. example: ´#bb-nav-next´

@@ -34,33 +34,39 @@ body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #777;
  	background: 
-		background-color: rgb(236,237,220,.1);
-    /* Animation defaults to a .3s loop */
+				linear-gradient(135deg, #ECEDDC 25%, transparent 1%),
+				linear-gradient(225deg, #ECEDDC 25%, transparent 1%),
+				linear-gradient(315deg, #ECEDDC 25%, transparent 1%),
+				linear-gradient(45deg,  #ECEDDC 25%, transparent 1%);
+				background-color: rgb(236,237,220,.1);
+        
+        /* Animation defaults to a .3s loop */
+  	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 
-  -webkit-transition: opacity 3s ease-in-out;
-  -moz-transition: opacity 3s ease-in-out;
-  -o-transition: opacity 3s ease-in-out;
-  transition: opacity 3s ease-in-out;
 }
 
 
 
 
-.bg-0 { background-color: #AFCCA9; background-image:url('../images/backgrounds/signofffortheholidays.gif'); }
-.bg-1 { background-color: #AFCCA9; background-image:url('../images/backgrounds/havewarmdaybyfireplace.gif'); }
-.bg-2 { background-color: #AFCCA9; background-image:url('../images/backgrounds/havewarmdaybyfireplace.gif'); }
-.bg-3 { background-color: #8cd2d1; background-image:url('../images/backgrounds/iceskatelikeapro.gif'); }
-.bg-4 { background-color: #CEDEB7; background-image:url('../images/backgrounds/hostmovienight.gif'); }
-.bg-5 { background-color: #AFCCA9; background-image:url('../images/backgrounds/overeat.gif'); }
-.bg-6 { background-color: #FFEB9F; background-image:url('../images/backgrounds/catchuponsleep.gif'); }
-.bg-7 { background-color: #F8B4AA; background-image:url('../images/backgrounds/takeadrivetoadmire.gif'); }
-.bg-8 { background-color: #FFEB9F; background-image:url('../images/backgrounds/getacrazyhaircut.gif'); }
-.bg-9 { background-color: #D7ECDD;  background-image:url('../images/backgrounds/gocarolingwithfriends.gif'); }
+.bg-0  { background-color: #AFCCA9; background-image:url('../images/backgrounds/signofffortheholidays.gif');}
+.bg-1  { background-color: #AFCCA9; background-image:url('../images/backgrounds/signofffortheholidays.gif');}
+.bg-2  { background-color: #AFCCA9; background-image:url('../images/backgrounds/havewarmdaybyfireplace.gif');}
+.bg-3  { background-color: #8cd2d1; background-image:url('../images/backgrounds/iceskatelikeapro-2.gif');}
 
-.bg-10 { background-color: #AFCCA9; background-image:url('../images/backgrounds/spendtimewithkids.gif'); }
-.bg-11 { background-color: #97D4C8; background-image:url('../images/backgrounds/opengifts.gif'); }
-.bg-12 { background-color: #CFE4AD;  background-image:url('../images/backgrounds/bakegingerbreadcookies.gif'); }
-.bg-13 { background-color: #C7B2D6;  background-image:url('../images/backgrounds/meetsanta.gif'); }
+.bg-4  { background-color: #CEDEB7; background-image:url('../images/backgrounds/overeat.gif');}
+
+.bg-5  { background-color: #AFCCA9; background-image:url('../images/backgrounds/hostmovienight.gif');}
+.bg-6  { background-color: #FFEB9F; background-image:url('../images/backgrounds/catchuponsleep.gif');}
+.bg-7  { background-color: #F8B4AA; background-image:url('../images/backgrounds/takeadrivetoadmire-2.gif');}
+.bg-8  { background-color: #FFEB9F; background-image:url('../images/backgrounds/getacrazyhaircut.gif'); }
+.bg-9  { background-color: #D7ECDD; background-image:url('../images/backgrounds/gocarolingwithfriends-2.gif');}
+.bg-10 { background-color: #AFCCA9; background-image:url('../images/backgrounds/spendtimewithkids.gif');}
+.bg-11 { background-color: #97D4C8; background-image:url('../images/backgrounds/opengifts-2.gif');}
+.bg-12 { background-color: #CFE4AD; background-image:url('../images/backgrounds/bakegingerbreadcookies-2.gif');}
+.bg-13 { background-color: #C7B2D6; background-image:url('../images/backgrounds/meetsanta-2.gif');}
 
 
 a {
@@ -79,7 +85,7 @@ a img {
 }
 
 
-h1{ 
+h1 { 
 	font-family: 'ciderscript', serif; 
 	font-size: 3.54658336879952em;
 	padding-left:10px;
@@ -87,7 +93,7 @@ h1{
 	color:red;
 }
 
-h2{ 
+h2 { 
 	font-family: 'chunkfiveroman', serif; 
 	font-size: 2.849813570165086em; 
 	font-style: italic;
@@ -96,7 +102,7 @@ h2{
 	color:red;
 }
 
-h3{ 
+h3 { 
 	font-family: 'ciderscript', serif; 
 	font-size: 2em; 
 	font-weight: 500;
@@ -104,11 +110,12 @@ h3{
 	color:#262626;
 }
 
-.clear-all{
+.clear-all {
 	line-height: 0;
 	margin-top:0; 
 }
-.skew-cider{
+
+.skew-cider {
     position: relative;
     -webkit-transform: rotate(-16deg) skew(-8deg, 0);
        -moz-transform: rotate(-16deg) skew(-8deg, 0);
@@ -117,7 +124,7 @@ h3{
             transform: rotate(-16deg) skew(-8deg, 0);
 }
 
-.skew-chuck{
+.skew-chuck {
     position: relative;
     -webkit-transform: rotate(-16deg) skew(-24deg, 0);
        -moz-transform: rotate(-16deg) skew(-24deg, 0);
@@ -126,10 +133,7 @@ h3{
             transform: rotate(-16deg) skew(-24deg, 0);
 }
 
-
-
-
-.level-up{
+.level-up {
 	margin: 15px 0 0 -63px; 
 	letter-spacing: .5px;
 /*	-webkit-animation: fadein 2s;
@@ -137,7 +141,7 @@ h3{
     animation: fadein 2s;*/
 }
 
-.your{
+.your {
 	font-size: 2.849813570165086em;
 	margin: 12px 0 0 -3px; 
 /*	-webkit-animation: fadein 3s;
@@ -145,7 +149,7 @@ h3{
     animation: fadein 3s;*/
 }
 
-.snow{
+.snow {
 	margin: -40px 0 0 -55px;
 	font-size: 5.927980267613726em;
 	font-weight: 100;
@@ -155,7 +159,7 @@ h3{
     animation: fadein 4s;*/
 }
 
-.sculpting{
+.sculpting {
 	margin: -45px 0 0 -10px;	
 	font-size: 4.03591149869285em;
 	letter-spacing: 1px;
@@ -164,7 +168,7 @@ h3{
     animation: fadein 5s;*/
 }
 
-.skills{
+.skills {
 	margin: -15px 0 0 -45px;	
 	font-size: 5.0655917173230876em;
 	font-weight: 100;
@@ -174,7 +178,7 @@ h3{
     animation: fadein 6s;*/
 }
 
-.snowsheep{
+.snowsheep {
 	margin: -10px 0 0 -15px;	
 	font-size: 3.464610451313116em;
 	letter-spacing: 2px;
@@ -249,7 +253,7 @@ h3{
 
 
 .container {
-	height: 100%;
+	height: 85%;
 /*	background-image: url('../images/demo1/background-wip.jpg');*/	
 	background-repeat: no-repeat;
 	background-size: 100%;
