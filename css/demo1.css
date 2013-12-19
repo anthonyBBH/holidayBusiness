@@ -52,65 +52,55 @@
     background-color: #6188F5;
     background-repeat: repeat-x;
     background-position: 0 0;
+
     /*background-size*/
     -webkit-background-size: 16px 8px;
     -moz-background-size: 16px 8px;
     -o-background-size: 16px 8px;
     background-size: 16px 8px;
+
     background-image: -webkit-linear-gradient(315deg,transparent,transparent 33%,rgba(0, 0, 0, 0.12) 33%,rgba(0, 0, 0, 0.12) 66%,transparent 66%,transparent);
     background-image: -moz-linear-gradient(315deg,transparent,transparent 33%,rgba(0, 0, 0, 0.12) 33%,rgba(0, 0, 0, 0.12) 66%,transparent 66%,transparent);
     background-image: -o-linear-gradient(315deg,transparent,transparent 33%,rgba(0, 0, 0, 0.12) 33%,rgba(0, 0, 0, 0.12) 66%,transparent 66%,transparent);
     background-image: linear-gradient(315deg,transparent,transparent 33%,rgba(0, 0, 0, 0.12) 33%,rgba(0, 0, 0, 0.12) 66%,transparent 66%,transparent);
+    
     /*animation*/
-    -webkit-animation: load 2s linear 0 ;
-    -moz-animation: load 2s linear 0 ;
-    -ms-animation: load 2s linear 0 ;
-    -o-animation: load 2s linear 0 ;
-    animation: load 2s linear 0 ;
+    -webkit-animation: load 3s linear 0 ;
+    -moz-animation: load 3s linear 0 ;
+    -ms-animation: load 3s linear 0 ;
+    -o-animation: load 3s linear 0 ;
+    animation: load 3s linear 0 ;
 }
 
-@-webkit-keyframes load { 
-    0% { width: 0% ;
-		background-position:0 0;}
-    100% { width: 90%;
-			background-position:-40px 0;
-			}
-}
-@-ms-keyframes load { 
-   0% { width: 0% ;
-		background-position:0 0;}
-    100% { width: 90%;
-			background-position:-40px 0;
-			}
-}
-@-o-keyframes load { 
-    0% { width: 0% ;
-		background-position:0 0;}
-    100% { width: 90%;
-			background-position:-40px 0;
-			}
-}
-@keyframes load { 
-  0% { width: 0% ;
-		background-position:0 0;}
-    100% { width: 90%;
-			background-position:-40px 0;
-			}
-}
-
-
+	@-webkit-keyframes load { 
+	    0%   { width: 0% ; background-position:0 0;}
+	    100% { width: 90%; background-position:-40px 0; }
+	}
+	@-ms-keyframes load { 
+	    0%   { width: 0% ; background-position:0 0; }
+	    100% { width: 90%; background-position:-40px 0; }
+	}
+	@-o-keyframes load { 
+	    0%   { width: 0% ; background-position:0 0;}
+	    100% { width: 90%; background-position:-40px 0; }
+	}
+	@keyframes load { 
+	    0%   { width: 0% ; background-position:0 0;}
+	    100% { width: 90%; background-position:-40px 0; }
+	}
 
 
 #fail-screen{
-	max-width: 100%;
-	min-width: 960px;
-	height:1080px;
-	margin-top:-1080px;
+	max-width: 2558px;
+	max-height:1352px;
+	top:-1352px;
+	left: 0;
 	background-color: rgb(0,0,0);
-	opacity: .6;
+	opacity: 0.6;
 	position: absolute;
 	z-index: 303;
-}
+ }
+
 
 .bb-custom-wrapper {
 	width: 950px;
@@ -118,24 +108,24 @@
 	position: relative;
 	margin: 50px auto;
 	text-align: center;
-	transform:rotate(-0.2deg);
-	-ms-transform:rotate(-0.2deg); /* IE 9 */
-	-webkit-transform:rotate(-0.2deg); /* Safari and Chrome */
 }
 
 .bb-custom-wrapper .bb-bookblock {
-/*	box-shadow: 0 12px 20px -10px rgba(81,64,49,0.6);
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;*/
+ 
 }
 
 .left-col{
 	width:380px;
 	height:505px;
-	float:left;
+	float:left;	
 }
 
+
+.left-shadow{
+-webkit-box-shadow: -4px 7px 5px rgba(81, 64, 49, 0.2);
+-moz-box-shadow:    -4px 7px 5px rgba(81, 64, 49, 0.2);
+box-shadow:         -4px 7px 5px rgba(81, 64, 49, 0.2);
+}
 
 .right-col{
 	width:380px;
@@ -150,7 +140,12 @@
 	background: -ms-linear-gradient(left,  #f2f0de 0%,#fffeed 100%); /* IE10+ */
 	background: linear-gradient(to right,  #f2f0de 0%,#fffeed 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f0de', endColorstr='#fffeed',GradientType=1 ); /* IE6-9 */
-/*	box-shadow: 12px 12px 20px -10px rgba(81,64,49,0.6);*/	
+
+-webkit-box-shadow: 4px 7px 5px rgba(81, 64, 49, 0.2);
+-moz-box-shadow:    4px 7px 5px rgba(81, 64, 49, 0.2);
+box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
+
+
     -webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -171,11 +166,6 @@
 
 
 #first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eight, #nineth, #tenth, #eleventh, #twelfth, #thirteenth, #fourteenth{
-/*	background-color: transparent;
-	box-shadow: 0 0 0 0 rgba(81,64,49,0);
-	transform:rotate(0.2deg);
-	-ms-transform:rotate(0.2deg); /* IE 9 
-	-webkit-transform:rotate(0.2deg); /* Safari and Chrome */
 	background-repeat: no-repeat;
 }
 
@@ -463,6 +453,7 @@
 	height: 35px;
 	margin: 30px auto 0;
 	background-image:url('../images/demo1/use_your_spacebar.png');
+	background-position: 35px 0px;
 	background-repeat: no-repeat;
 }
 
@@ -561,10 +552,6 @@
 
 .bb-custom-icon-arrow-left:before,
 .bb-custom-icon-first:before {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
 }
 
 /* No JS */

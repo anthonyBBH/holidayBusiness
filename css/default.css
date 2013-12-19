@@ -33,19 +33,10 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #777;
- 	background: 
-				linear-gradient(135deg, #ECEDDC 25%, transparent 1%),
-				linear-gradient(225deg, #ECEDDC 25%, transparent 1%),
-				linear-gradient(315deg, #ECEDDC 25%, transparent 1%),
-				linear-gradient(45deg,  #ECEDDC 25%, transparent 1%);
-				background-color: rgb(236,237,220,.1);
-        
-        /* Animation defaults to a .3s loop */
-  	-webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-
+  	-webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
 }
 
 
@@ -247,7 +238,7 @@ h3 {
 
 
 #stage{
-	display: hidden;
+	display: ;
 }
 
 
@@ -281,7 +272,7 @@ h3 {
 /* Main Content */
 .main {
 	max-width: 69em;
-/*	opacity: .6; */ 
+
 }
 
 .column {
