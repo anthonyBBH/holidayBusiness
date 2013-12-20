@@ -33,31 +33,65 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #777;
-  	-webkit-transition: all 3s ease-in-out;
-    -moz-transition: all 3s ease-in-out;
-    -o-transition: all 3s ease-in-out;
-    transition: all 3s ease-in-out;
+
+  	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 
 
 
-.bg-0  { background-color: #AFCCA9; background-image:url('../images/backgrounds/signofffortheholidays.gif');}
-.bg-1  { background-color: #AFCCA9; background-image:url('../images/backgrounds/signofffortheholidays.gif');}
-.bg-2  { background-color: #AFCCA9; background-image:url('../images/backgrounds/havewarmdaybyfireplace.gif');}
-.bg-3  { background-color: #8cd2d1; background-image:url('../images/backgrounds/iceskatelikeapro-2.gif');}
+.bg-0  { background-color: #AFCCA8; background-image:url('../images/backgrounds/signofffortheholidays.gif');}
+.bg-1  { background-color: #AFCCA8; background-image:url('../images/backgrounds/signofffortheholidays.gif');}
 
-.bg-4  { background-color: #CEDEB7; background-image:url('../images/backgrounds/overeat.gif');}
+.bg-2  { background-color: #AFCCA8; background-image:url('../images/backgrounds/havewarmdaybyfireplace.gif');}
+.bg-3  { background-color: #8CD2D0; background-image:url('../images/backgrounds/iceskatelikeapro.gif');}
+.bg-4  { background-color: #A47863; background-image:url('../images/backgrounds/signofffortheholidays.gif');}
+.bg-5  { background-color: #AFCCA8; background-image:url('../images/backgrounds/overeat.gif');}
+.bg-6  { background-color: #FFEC9E; background-image:url('../images/backgrounds/catchuponsleep.gif');}
+.bg-7  { background-color: #F8B4AA; background-image:url('../images/backgrounds/takeadrivetoadmire.gif');}
+.bg-8  { background-color: #FFEC9E; background-image:url('../images/backgrounds/getacrazyhaircut.gif'); }
+.bg-9  { background-color: #D7ECDC; background-image:url('../images/backgrounds/gocarolingwithfriends.gif');}
+.bg-10 { background-color: #AFCCA8; background-image:url('../images/backgrounds/havewarmdaybyfireplace.gif');}
+.bg-11 { background-color: #97D4C8; background-image:url('../images/backgrounds/opengifts.gif');}
+.bg-12 { background-color: #CFE4AD; background-image:url('../images/backgrounds/bakegingerbreadcookies.gif');}
+.bg-13 { background-color: #C7B2D6; background-image:url('../images/backgrounds/meetsanta.gif');}
 
-.bg-5  { background-color: #AFCCA9; background-image:url('../images/backgrounds/hostmovienight.gif');}
-.bg-6  { background-color: #FFEB9F; background-image:url('../images/backgrounds/catchuponsleep.gif');}
-.bg-7  { background-color: #F8B4AA; background-image:url('../images/backgrounds/takeadrivetoadmire-2.gif');}
-.bg-8  { background-color: #FFEB9F; background-image:url('../images/backgrounds/getacrazyhaircut.gif'); }
-.bg-9  { background-color: #D7ECDD; background-image:url('../images/backgrounds/gocarolingwithfriends-2.gif');}
-.bg-10 { background-color: #AFCCA9; background-image:url('../images/backgrounds/spendtimewithkids.gif');}
-.bg-11 { background-color: #97D4C8; background-image:url('../images/backgrounds/opengifts-2.gif');}
-.bg-12 { background-color: #CFE4AD; background-image:url('../images/backgrounds/bakegingerbreadcookies-2.gif');}
-.bg-13 { background-color: #C7B2D6; background-image:url('../images/backgrounds/meetsanta-2.gif');}
+
+
+
+.push_button{
+	width:200px;
+	color:#FFF;
+	position:relative;	
+	display:block;
+	text-decoration:none;
+	margin:0 auto;
+	border-radius:5px;
+	border:solid 1px #D94E3B;
+	background:#cb3b27;
+	text-align:center;
+	padding:20px 30px;
+	
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 9px 0px #84261a;
+        -moz-box-shadow: 0px 9px 0px #84261a;
+        box-shadow: 0px 9px 0px #84261a;
+}
+
+
+.push_button:active{
+    -webkit-box-shadow: 0px 2px 0px #84261a;
+    -moz-box-shadow: 0px 2px 0px #84261a;
+    box-shadow: 0px 2px 0px #84261a;
+    position:relative;
+    top:7px;
+}
 
 
 a {
@@ -104,6 +138,24 @@ h3 {
 .clear-all {
 	line-height: 0;
 	margin-top:0; 
+}
+
+
+
+.buttons{
+	width:130px;
+	height: 25px;
+	margin: 8px 0 0 275px;
+	float:left;
+	border-left:2px solid #4D4D4F;
+}
+
+.button{
+	width:20px;
+	height: 20px;
+	margin:4px 0 0 8px;
+	background-color: magenta; 
+	float:left;
 }
 
 .skew-cider {
@@ -201,6 +253,15 @@ h3 {
 	float:left;
 }
 
+.text-container-prime{
+	width:100%;
+	height:100%;
+	padding: 80px 0 0; 
+/*	background-image:url('../images/demo1/xlettering-test.png');*/
+	background-position: 50% 50%;
+	background-repeat:no-repeat; 
+	float:left;
+}
 
 .text-container{
 	width:100%;
@@ -210,6 +271,7 @@ h3 {
 	background-position: 50% 50%;
 	background-repeat:no-repeat; 
 	float:left;
+	cursor: pointer;
 }
 
 
@@ -238,7 +300,11 @@ h3 {
 
 
 #stage{
-	display: ;
+ position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
 }
 
 
