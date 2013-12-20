@@ -48,7 +48,7 @@ body {
 
 .bg-2  { background-color: #AFCCA8; background-image:url('../images/backgrounds/havewarmdaybyfireplace.gif');}
 .bg-3  { background-color: #8CD2D0; background-image:url('../images/backgrounds/iceskatelikeapro.gif');}
-.bg-4  { background-color: #A47863; background-image:url('../images/backgrounds/signofffortheholidays.gif');}
+.bg-4  { background-color: #A47863; background-image:url('../images/backgrounds/hostmovienight.gif');}
 .bg-5  { background-color: #AFCCA8; background-image:url('../images/backgrounds/overeat.gif');}
 .bg-6  { background-color: #FFEC9E; background-image:url('../images/backgrounds/catchuponsleep.gif');}
 .bg-7  { background-color: #F8B4AA; background-image:url('../images/backgrounds/takeadrivetoadmire.gif');}
@@ -62,36 +62,6 @@ body {
 
 
 
-.push_button{
-	width:200px;
-	color:#FFF;
-	position:relative;	
-	display:block;
-	text-decoration:none;
-	margin:0 auto;
-	border-radius:5px;
-	border:solid 1px #D94E3B;
-	background:#cb3b27;
-	text-align:center;
-	padding:20px 30px;
-	
-	-webkit-transition: all 0.1s;
-	-moz-transition: all 0.1s;
-	transition: all 0.1s;
-	
-	-webkit-box-shadow: 0px 9px 0px #84261a;
-        -moz-box-shadow: 0px 9px 0px #84261a;
-        box-shadow: 0px 9px 0px #84261a;
-}
-
-
-.push_button:active{
-    -webkit-box-shadow: 0px 2px 0px #84261a;
-    -moz-box-shadow: 0px 2px 0px #84261a;
-    box-shadow: 0px 2px 0px #84261a;
-    position:relative;
-    top:7px;
-}
 
 
 a {
@@ -140,23 +110,98 @@ h3 {
 	margin-top:0; 
 }
 
+#screenBG{
+	width:100%;
+	height: 100%;
+	position: fixed;
+	z-index:1;
+}
 
 
 .buttons{
-	width:130px;
-	height: 25px;
-	margin: 8px 0 0 275px;
-	float:left;
-	border-left:2px solid #4D4D4F;
+	width:50px;
+	height:45px;
+	padding-left: 8px;
+	margin: -70 0 0 280px;
+	float:right;
+	border-left:2px solid #606062;
+	cursor: pointer;
 }
 
 .button{
-	width:20px;
-	height: 20px;
-	margin:4px 0 0 8px;
-	background-color: magenta; 
+	width:33px;
+	height:33px;
+	margin:2px 0 0 8px;
 	float:left;
 }
+
+
+#use-your-space{
+	width:395px;
+	height: 45px;
+	margin: -60px auto 0 auto;
+	background-image:url('../images/buttonSprite/navigationText.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;  
+}
+
+
+.space-button{
+	width:119px;
+	height:45px;
+	margin-left: 106px; 
+	float: left;
+	background-image:url('../images/buttonSprite/shortSprite.png');
+	background-position: 0px -315px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.space-active{
+	background-image:url('../images/buttonSprite/shortSprite.png');
+	background-position: 0px -264px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.volume{
+	background-image:url('../images/buttonSprite/shortSprite.png');
+	background-repeat: repeat;
+	background-position: 0px -220px;
+}
+
+.volume:active, .active{
+	background-image:url('../images/buttonSprite/shortSprite.png');
+	background-repeat: repeat;
+	background-position: 0px -176px;	
+}
+
+
+
+.twitter{
+	background-image:url('../images/buttonSprite/navSpriteSheet.png');
+	background-repeat: repeat;
+	background-position: 0px -132px;
+}
+
+.twitter:active{
+	background-image:url('../images/buttonSprite/navSpriteSheet.png');
+	background-repeat: repeat;
+	background-position: 0px -88px;
+}
+
+.fb_share_button{
+	background-image:url('../images/buttonSprite/navSpriteSheet.png');
+	background-repeat: repeat;
+	background-position: 0px 0px;
+}
+
+.fb_share_button:active{
+	background-image:url('../images/buttonSprite/navSpriteSheet.png');
+	background-repeat: repeat;
+	background-position: 0px -44px;
+}
+
 
 .skew-cider {
     position: relative;
@@ -300,11 +345,54 @@ h3 {
 
 
 #stage{
- position: fixed;
-    width: 100%;
+	width: 100%;
     height: 100%;
     top: 0px;
     left: 0px;
+/*    background-color: #AFCCA8; background-image:url('../images/backgrounds/signofffortheholidays.gif');
+    position: absolute;
+    z-index: 3;*/
+}
+
+
+.hinge{	
+
+	-webkit-animation: hinge 3s;
+	-moz-animation: hinge  3s;
+	-o-animation: hinge 3s;
+	animation: hinge 3s;    
+    }
+
+
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes hinge {
+	0% { -webkit-transform: rotate(0); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	20%, 60% { -webkit-transform: rotate(80deg); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
+	40% { -webkit-transform: rotate(60deg); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
+	80% { -webkit-transform: rotate(60deg) translateY(0); opacity: 1; -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
+	100% { -webkit-transform: translateY(700px); opacity: 0; }
+}
+
+@-moz-keyframes hinge {
+	0% { -moz-transform: rotate(0); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	20%, 60% { -moz-transform: rotate(80deg); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	40% { -moz-transform: rotate(60deg); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	80% { -moz-transform: rotate(60deg) translateY(0); opacity: 1; -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	100% { -moz-transform: translateY(700px); opacity: 0; }
+}
+
+@-o-keyframes hinge {
+	0% { -o-transform: rotate(0); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	20%, 60% { -o-transform: rotate(80deg); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	40% { -o-transform: rotate(60deg); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	80% { -o-transform: rotate(60deg) translateY(0); opacity: 1; -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	100% { -o-transform: translateY(700px); opacity: 0; }
+}
+
+@keyframes hinge {
+	0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }	
+	20%, 60% { transform: rotate(80deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
+	40% { transform: rotate(60deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
+	80% { transform: rotate(60deg) translateY(0); opacity: 1; transform-origin: top left; animation-timing-function: ease-in-out; }	
+	100% { transform: translateY(700px); opacity: 0; }
 }
 
 

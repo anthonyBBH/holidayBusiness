@@ -120,13 +120,27 @@
 	float:left;	
 }
 
+#qfix{
+	width:75px;
+	height:505px;
+	position: absolute;
+	margin:57px 0 0 140px;
+	display: none;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 
+	-webkit-box-shadow: -4px 1px 5px rgba(81, 64, 49, 0.17);
+	-moz-box-shadow:    -4px 1px 5px rgba(81, 64, 49, 0.17);
+	box-shadow:         -4px 1px 5px rgba(81, 64, 49, 0.17);
+}
+ 
 .left-shadow{
 -webkit-box-shadow: -4px 7px 5px rgba(81, 64, 49, 0.2);
 -moz-box-shadow:    -4px 7px 5px rgba(81, 64, 49, 0.2);
 box-shadow:         -4px 7px 5px rgba(81, 64, 49, 0.2);
 }
-
+  
 .right-col{
 	width:380px;
 	height:505px;
@@ -172,7 +186,8 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 
 #first .left-col{
 	background-image: url('../images/demo1/bbh-presents.png');
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;	
+	background-position: -15px 40px;
 }
 
 
@@ -186,7 +201,7 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 #second .left-col{
 	background-image: url('../images/demo1/thank-you.png');
 	background-repeat: no-repeat;	
-	background-position: 15px 0;
+	background-position: 15px 50px;
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -196,10 +211,10 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 
 
 #third .left-col{
-	background-image: url('../images/demo1/have-a-warm-day-by-the-fireplace.png');
+	background-image: url('../images/demo1/spend-a-warm-day-by-the-fireplace.png');
 	background-repeat: no-repeat;	
 	background-size: 90%;
-	background-position: 20px 5px;
+	background-position: 10px 30px;
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -210,8 +225,8 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 #fourth .left-col{
 	background-image: url('../images/demo1/ice-skate-like-a-pro.png');
 	background-repeat: no-repeat;	
-	background-size: 90%;
-	background-position: 20px 5px;
+	background-size: 80%;
+	background-position: 42px 30px;
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -221,9 +236,9 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 
 #fifth .left-col{
 	background-image: url('../images/demo1/host-a-movie-night.png');
-	background-repeat: no-repeat;	
-	background-size: 90%;
-	background-position: 20px 5px;
+	background-repeat: no-repeat;		
+	background-size: 80%;
+	background-position: 42px 30px;
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -247,8 +262,8 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 #seventh .left-col{
 	background-image: url('../images/demo1/catch-up-on-sleep.png');
 	background-repeat: no-repeat;	
-	background-size: 90%;
-	background-position: 20px 5px;
+	background-size: 80%;
+	background-position: 42px 30px;
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -260,8 +275,8 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 #eighth .left-col {
 	background-image: url('../images/demo1/take-a-drive-to-admire-the-holiday-lights.png');
 	background-repeat: no-repeat;	
-	background-size: 90%;
-	background-position: 20px 5px;
+	background-size: 80%;
+	background-position: 42px 30px;
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -286,8 +301,8 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 #tenth .left-col {
 	background-image: url('../images/demo1/go-caroling-with-some-friends.png');
 	background-repeat: no-repeat;	
-	background-size: 90%;
-	background-position: 20px 5px;
+	background-size: 80%;
+	background-position: 42px 30px;
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -298,9 +313,9 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 
 #eleventh .left-col {
 	background-image: url('../images/demo1/spend-time-with-your-kids.png');
-	background-repeat: no-repeat;	
-	background-size: 90%;
-	background-position: 20px 5px;
+	background-repeat: no-repeat;		
+	background-size: 80%;
+	background-position: 42px 30px;
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -312,8 +327,8 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 #twelfth .left-col {
 	background-image: url('../images/demo1/open-gifts.png');
 	background-repeat: no-repeat;	
-	background-size: 90%;
-	background-position: 20px 5px;
+	background-size: 80%;
+	background-position: 42px 30px;
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -324,9 +339,9 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 
 #thirteenth .left-col {
 	background-image: url('../images/demo1/bake-gigerbread-cookies.png');
-	background-repeat: no-repeat;	
-	background-size: 90%;
-	background-position: 20px 5px;
+	background-repeat: no-repeat;		
+	background-size: 80%;
+	background-position: 42px 30px;
 	margin-top: 6px;
 	background-color:#f2f0de;
 	-webkit-border-radius: 10px;
@@ -388,7 +403,7 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 
 #fifth .right-col .image-wrap-2{
 	margin-top: 15px;
-	background-color:#A4715F;
+	background-color:#AFCCA8;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
@@ -411,7 +426,8 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;		
-	background-image: url('../images/demo1/catch-up-on-sleep-img.png');	
+	background-image: url('../images/demo1/catch-up-on-sleep-img.png');		
+	background-position: -15px -10px;
 }
 
 
@@ -442,7 +458,9 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
-	background-image: url('../images/demo1/go-caroling-with-friends-img.png');		
+	background-image: url('../images/demo1/go-caroling-with-friends-img.png');	
+	background-repeat: no-repeat;
+	background-position: 18px 85px;	
 }
 
 
@@ -482,18 +500,10 @@ box-shadow:         4px 7px 5px rgba(81, 64, 49, 0.2);
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
-	background-image: url('../images/demo1/meet-santa-img.png');			
+	background-image: url('../images/demo1/meet-santa-img.png');	
+	background-position: -17px 0;		
 }
 
-
-#use-your-space{
-	width:420px;
-	height: 35px;
-	margin: -30px auto 0;
-	background-image:url('../images/demo1/use_your_spacebar.png');
-	background-position: 35px 0px;
-	background-repeat: no-repeat;
-}
 
 
 
